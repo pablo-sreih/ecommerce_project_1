@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ItemController;
+use App\Http\Controllers\CategoryController;
 
 Route::controller(AuthController::class)->group(function () {
     Route::post('login', 'login');
@@ -16,3 +17,4 @@ Route::controller(AuthController::class)->group(function () {
 Route::get('/items', [ItemController::class, 'getAllItems'])->name("get-all-items");
 Route::get('/item', [ItemController::class, 'getItemById'])->name("get-item-by-id");
 Route::post('/add-item', [ItemController::class, 'addItem'])->name("add-item");
+Route::post('/add-category', [CategoryController::class, 'addCategory'])->name("add-category");
