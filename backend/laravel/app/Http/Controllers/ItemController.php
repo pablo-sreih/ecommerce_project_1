@@ -37,6 +37,5 @@ class ItemController extends Controller
         return response()->json([
             "status" => "Success",
         ],200);
-
     }
 }
