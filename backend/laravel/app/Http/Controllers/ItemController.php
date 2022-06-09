@@ -15,4 +15,28 @@ class ItemController extends Controller
             "items" => $items
         ],200);
     }
+
+    public function getItemById(Request $request){
+        $item = Item::find($request->id);
+        
+        return response()->json([
+            "status" => "Success",
+            "item" => $item
+        ],200);
+    }
+
+    public function addItem(Request $request){
+        $item = new Item;
+        $item->name = $request->name;
+        $item->price = $request->price;
+        $item->category_id = $request->category_id;
+        $item->image = $request->image;
+        $item->description = $request->description;
+        $item->save();
+
+        return response()->json([
+            "status" => "Success",
+        ],200);
+
+    }
 }

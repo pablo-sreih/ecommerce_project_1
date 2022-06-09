@@ -14,3 +14,4 @@ Route::controller(AuthController::class)->group(function () {
 });
 
 Route::get('/items', [ItemController::class, 'getAllItems'])->name("get-all-items");
+Route::get('/item', [ItemController::class, 'getItemById'])->name("get-item-by-id");
