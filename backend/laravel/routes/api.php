@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ItemController;
 
 Route::controller(AuthController::class)->group(function () {
     Route::post('login', 'login');
@@ -11,3 +12,5 @@ Route::controller(AuthController::class)->group(function () {
     Route::post('refresh', 'refresh');
 
 });
+
+Route::get('/items', [ItemController::class, 'getAllItems'])->name("get-all-items");
