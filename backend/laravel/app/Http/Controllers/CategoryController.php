@@ -16,4 +16,13 @@ class CategoryController extends Controller
             "status" => "Success",
         ],200);
     }
+
+    public function getCategoryById(Request $request){
+        $category = Category::find($request->id);
+
+        return response()->json([
+            "status" => "Success",
+            "category" => $category,
+        ],200);
+    }
 }

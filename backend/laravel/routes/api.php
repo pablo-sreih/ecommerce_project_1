@@ -19,3 +19,4 @@ Route::get('/item', [ItemController::class, 'getItemById'])->name("get-item-by-i
 Route::post('/add-item', [ItemController::class, 'addItem'])->name("add-item");
 Route::post('/add-category', [CategoryController::class, 'addCategory'])->name("add-category");
 Route::post('/delete-item', [ItemController::class, 'deleteItemById'])->name("delete-item");
+Route::get('/get-category-id', [CategoryController::class, 'getCategoryById'])->name("get-category-id");
