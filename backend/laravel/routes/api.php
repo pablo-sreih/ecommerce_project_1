@@ -21,3 +21,4 @@ Route::post('/add-category', [CategoryController::class, 'addCategory'])->name("
 Route::post('/delete-item', [ItemController::class, 'deleteItemById'])->name("delete-item");
 Route::get('/get-category-id', [CategoryController::class, 'getCategoryById'])->name("get-category-id");
 Route::get('/get-category-name', [CategoryController::class, 'getCategoryByName'])->name("get-category-name");
+Route::get('/get-all-categories', [CategoryController::class, 'getAllCategories'])->name("get-all-categories");
