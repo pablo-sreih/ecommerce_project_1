@@ -38,4 +38,13 @@ class ItemController extends Controller
             "status" => "Success",
         ],200);
     }
+
+    public function deleteItemById(Request $request){
+        $item = Item::find($request->id);
+        $item->delete();
+
+        return response()->json([
+            "status" => "Success",
+        ],200);
+    }
 }

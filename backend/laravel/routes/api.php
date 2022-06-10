@@ -18,3 +18,4 @@ Route::get('/items', [ItemController::class, 'getAllItems'])->name("get-all-item
 Route::get('/item', [ItemController::class, 'getItemById'])->name("get-item-by-id");
 Route::post('/add-item', [ItemController::class, 'addItem'])->name("add-item");
 Route::post('/add-category', [CategoryController::class, 'addCategory'])->name("add-category");
+Route::post('/delete-item', [ItemController::class, 'deleteItemById'])->name("delete-item");
