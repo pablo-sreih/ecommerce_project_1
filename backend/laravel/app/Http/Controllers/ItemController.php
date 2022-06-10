@@ -25,6 +25,16 @@ class ItemController extends Controller
         ],200);
     }
 
+    public function getItemByName(Request $request){
+        $name = $request->name;
+        $item = Item::where('name', 'LIKE', "%$name%")->get();
+
+        return response()->json([
+            "status" => "Success",
+            "item" => $item,
+        ],200);
+    }
+
     public function addItem(Request $request){
         $item = new Item;
         $item->name = $request->name;
