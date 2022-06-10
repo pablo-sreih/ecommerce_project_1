@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\CategoryController;
+use App\HTTP\Controllers\FavoriteController;
 
 Route::controller(AuthController::class)->group(function () {
     Route::post('login', 'login');
@@ -23,3 +24,4 @@ Route::get('/get-category-id', [CategoryController::class, 'getCategoryById'])->
 Route::get('/get-category-name', [CategoryController::class, 'getCategoryByName'])->name("get-category-name");
 Route::get('/get-all-categories', [CategoryController::class, 'getAllCategories'])->name("get-all-categories");
 Route::get('/get-item-by-name', [ItemController::class, 'getItemByName'])->name("get-item-by-name");
+Route::get('/get-all-favorites', [FavoriteController::class, 'getAllFavorites'])->name("get-all-favorites");

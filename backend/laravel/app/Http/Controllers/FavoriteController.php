@@ -7,7 +7,12 @@ use App\Models\Favorites;
 
 class FavoriteController extends Controller
 {
-    public function addFavorite(Request $request){
-        
+    public function getAllFavorites(Request $request){
+        $favorites = Favorites::all();
+
+        return response()->json([
+            "status" => "Success",
+            "favorites" => $favorites
+        ],200);
     }
 }
