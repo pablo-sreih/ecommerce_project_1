@@ -10,12 +10,11 @@
 
 .main-container{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin-top: 5%;
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-top: 4%;
 }
 
 .main-container img{
@@ -28,8 +27,9 @@
     background-color:rgb(255, 255, 255);
     box-shadow: 0 0 30px rgba(170, 170, 170, 0.7) ;
     width:fit-content;
-    padding: 20px;
+    padding: 15px;
     border-radius: 15px;
+    margin-top: 40px;
 }
 
 .box-container form{
@@ -40,8 +40,8 @@
 }
 
 .box-container form input{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 15px;
     border-radius: 10px;
     width: 250px;
