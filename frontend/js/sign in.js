@@ -16,6 +16,8 @@ function send(){
     .then(function (response) {
         if(response.data["status"] === 'success'){
             location.href = './html/main.html'
+        } else {
+            alert('User Not Found!')
         };
         console.log(response.data);
     })

@@ -15,6 +15,10 @@ function send(){
         data: data,
     })
     .then(function (response){
-        console.log(response.data);
+        if (response.data["status"] === "success"){
+            location.href = "./main.html"
+        } else {
+            alert('Credentials Already Taken');
+        }
     })
 }
