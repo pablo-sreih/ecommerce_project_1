@@ -145,11 +145,16 @@
 }
 
 .categories select{
+    appearance: none;
+    background-image: url("../assets/images/icons/down_arrow.png");
+    background-repeat: no-repeat;
+    background-size: .9em;
+    background-position: right 1.3em top 50%, 0 0;
     padding: 20px;
     width: 300px;
     border: none;
     border-radius: 15px;
-    color: darkturquoise;
+    /* color: darkturquoise; */
 }
 
 .categories select option{
@@ -225,6 +230,7 @@
 }
 
 #price{
+    margin-top: 5px;
     text-align: left;
-    font-weight: bold;
+    font-weight: lighter;
 }
