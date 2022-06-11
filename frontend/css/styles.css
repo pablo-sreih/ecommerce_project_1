@@ -5,23 +5,28 @@
 }
 
 body{
-    background-color: black;
+    background-image: url("../assets/images/backgrounds/colorful-shopping-bags.jpg");
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .main-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 150px;
-    /* margin-left: 120px; */
+    margin-top: 90px;
+}
+
+.main-container img{
+    margin-bottom: 5px;
 }
 
 .box-container{
     display: flex;
-    background-color: none;
-    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* border: 2px solid white; */
     width:fit-content;
     height: auto;
     padding: 20px;
@@ -40,16 +45,23 @@ body{
     padding: 10px;
     border-radius: 10px;
     font-size: 20px;
+    font-weight: lighter;
 }
 
 .box-container a{
     margin-bottom: 10px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 .box-container button{
-    padding: 13px 115px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 106px;
     border-radius: 10px;
+    font-size: 20px;
 }
 
 .box-container form input{
