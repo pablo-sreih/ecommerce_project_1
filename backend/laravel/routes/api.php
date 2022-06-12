@@ -25,3 +25,4 @@ Route::get('/get-category-name', [CategoryController::class, 'getCategoryByName'
 Route::get('/get-all-categories', [CategoryController::class, 'getAllCategories'])->name("get-all-categories");
 Route::get('/get-item-by-name', [ItemController::class, 'getItemByName'])->name("get-item-by-name");
 Route::get('/get-all-favorites', [FavoriteController::class, 'getAllFavorites'])->name("get-all-favorites");
+Route::post('/add-favorite', [FavoriteController::class, 'addFavorite'])->name("add-favorite");

@@ -15,4 +15,15 @@ class FavoriteController extends Controller
             "favorites" => $favorites
         ],200);
     }
+
+    public function addFavorite(Request $request){
+        $favorites = new Favorites;
+        $favorites->user_id = $request->user_id;
+        $favorites->item_id = $request->item_id;
+        $favorites->save();
+
+        return response()->json([
+            "status" => "Success",
+        ],200);
+    }
 }
