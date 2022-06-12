@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Shoppable</title>
 </head>
 <body id="body2">
@@ -16,7 +17,7 @@
                     <a href="">Shop</a>
                     <a href="">Favorites</a>
                     <a href="">Contact</a>
-                    <a href="../index.html">Login</a>
+                    <a href="../index.html">Logout</a>
                 </div>
             </nav>
         </div>
@@ -24,17 +25,13 @@
     <div class="cat-container">
         <div class="categories">
             <label for="categories">Categories</label>
-            <select name="categories" id="categories">
-                <option value="">Electronics</option>
-                <option value="">Fashion</option>
-                <option value="">Mobilephones</option>
-                <option value="">Laptops</option>
-                <option value="">Food</option>
+            <select type="submit" name="categories" id="categories">
+                <option value="0">All</option>
             </select>
         </div>
     </div>
-    <div class="items-container">
-        <div id="item-container">
+    <div class="items-container" id="items_container">
+        <!-- <div id="item-container">
             <div id="item">
                 <img src="../assets/images/items/cam.png" alt="">
                 <button>❤</button>
@@ -81,7 +78,8 @@
                 <label id="item-title">World Wear Footwear</label>
                 <label id="price">140$</label>
             </div>
-        </div>
+        </div> -->
     </div>
+    <script src="../js/main.js"></script>
 </body>
 </html>

@@ -41,7 +41,6 @@ class ItemController extends Controller
         $item->price = $request->price;
         $item->category_id = $request->category_id;
         $item->image = $request->image;
-        $item->description = $request->description;
         $item->save();
 
         return response()->json([
