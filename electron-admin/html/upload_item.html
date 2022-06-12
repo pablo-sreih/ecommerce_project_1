@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Shoppable - Admin Upload</title>
+</head>
+<body id="body1">
+    <div>
+        <div>
+            <nav class="nav">
+                <img src="../assets/images/logos/logo_white.png" alt="">
+                <div>
+                    <a href="../html/upload_item.html">Upload Items</a>
+                    <a href="">Add Categories</a>
+                    <a href="">Contact</a>
+                    <a href="../index.html">Logout</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="upload-doc">
+    <h1>Upload Item</h1>
+        <form>
+            <label for="item_name">Item Name:</label>
+            <input type="text" id="item_name">
+            <br><br>
+            <label for="item_price">Item Price:</label>
+            <input type="text" id="item_price">
+            <br><br>
+            <label for="category">Select a Category:</label>
+            <select name="categories" id="categories"></select>
+            <br><br>
+            <label for="image">Upload Image:</label>
+            <input type="file" name="image" id="item_image" accept="image/*">
+            <br><br>
+            <label for="description">Description:</label>
+            <input type="text" id="description">
+            <br><br>
+            <button type="button" id="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <script src="../js/upload_item.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#body1{
+    background-color: rgb(245, 245, 245);
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+.main-container img{
+    width: 400px;
+}
+
+.box-container{
+    display: flex;
+    align-items: center;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 0 0 30px rgba(170, 170, 170, 0.7) ;
+    width:fit-content;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+.box-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container form input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    font-size: 15px;
+    font-weight: lighter;
+    background-color: rgb(235, 235, 235);
+}
+
+.box-container a{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+    font-weight:bold;
+    font-size: 14px;
+}
+
+.box-container a:hover{
+    text-decoration: underline;
+}
+
+.box-container button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+.box-container form input{
+    border: none;
+}
+
+.box-container form input::placeholder{
+    color: rgb(158, 158, 158);
+}
+
+.box-container form input:focus{
+    outline: none;
+}
+
+.box-container form button{
+    border: none;
+    cursor: pointer;
+}
+
+#body2{
+    background-color: rgb(245, 245, 245);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 60px;
+    align-items: center;
+    width: 100%;
+}
+
+.nav img{
+    width: 10%;
+    margin-left: 50px;
+}
+
+.nav div{
+    margin-right: 50px;
+}
+
+.nav div a{
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.nav div a:hover{
+    border-bottom: 1px solid white;
+}
+
+.cat-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categories label{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.categories select{
+    appearance: none;
+    background-image: url("../assets/images/icons/down_arrow.png");
+    background-repeat: no-repeat;
+    background-size: .9em;
+    background-position: right 1.3em top 50%, 0 0;
+    padding: 20px;
+    width: 300px;
+    border: none;
+    border-radius: 15px;
+    /* color: darkturquoise; */
+}
+
+.categories select option{
+    font-size: 15px;
+}
+
+#item-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 65px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#item-container div{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#item-container img{
+    background-color: white;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 15px;
+}
+
+#item{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#item button{
+    position: absolute;
+    width: 35px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    left: 80%;
+    top: 2%;
+}
+
+#item button:hover{
+    background-color: rgb(255, 100, 100);
+    color: white;
+}
+
+#item button:focus{
+    color: red;
+}
+
+#item-container img:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.items-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+#item-title{
+    text-align: left;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#price{
+    margin-top: 5px;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.upload-doc{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.upload-doc h1{
+    margin-bottom: 50px;
+}
+
+.upload-doc button{
+    padding: 10px 40px;
+    font-size: 20px;
+}
