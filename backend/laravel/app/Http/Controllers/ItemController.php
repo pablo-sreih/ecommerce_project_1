@@ -57,4 +57,14 @@ class ItemController extends Controller
             "status" => "Success",
         ],200);
     }
+
+    public function getItemByCategoryId(Request $request){
+        $category_id = $request->category_id;
+        $item = Item::where('category_id', $category_id)->get();
+
+        return response()->json([
+            "status" => "Success",
+            "items" => $item,
+        ],200);
+    }
 }

@@ -36,4 +36,5 @@ class FavoriteController extends Controller
             "favorites" => $favorites,
         ],200);
     }
+
 }

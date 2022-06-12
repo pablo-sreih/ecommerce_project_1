@@ -27,3 +27,6 @@ Route::get('/get-item-by-name', [ItemController::class, 'getItemByName'])->name(
 Route::get('/get-all-favorites', [FavoriteController::class, 'getAllFavorites'])->name("get-all-favorites");
 Route::post('/add-favorite', [FavoriteController::class, 'addFavorite'])->name("add-favorite");
 Route::post('/get-favorite', [FavoriteController::class, 'getFavoritesById'])->name("get-favorite-by-id");
+Route::post('/getItemByCategoryId', [ItemController::class, 'getItemByCategoryId'])->name("get-favorite-by-id");
+
+// getItemByCategoryId
