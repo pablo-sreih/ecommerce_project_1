@@ -43,6 +43,5 @@ class CategoryController extends Controller
             "status" => "Success",
             "category" => $categories
         ],200);
-    } 
-
+    }
 }

@@ -15,10 +15,12 @@ function send(){
     })
     .then(function (response) {
         if(response.data["status"] === 'success'){
+            localStorage.setItem("token", response.data["authorisation"]["token"]),
             location.href = './html/main.html'
-        } else {
-            alert('User Not Found!')
         };
         console.log(response.data);
     })
+    .catch(function(error){
+        alert("Incorrect Credentials!")
+      });
 }
