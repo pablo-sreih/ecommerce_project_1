@@ -248,3 +248,17 @@
     padding: 10px 40px;
     font-size: 20px;
 }
+
+.add-category-div{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.add-category-div input{
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.add-category-div button{
+    padding: 10px;
+}
